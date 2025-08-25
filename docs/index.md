@@ -12,6 +12,8 @@ Demostrar la implementación de un flujo de trabajo GitOps completo para una apl
 
 ## 🏗️ Arquitectura
 
+![Diagrama de Arquitectura](images/Diagrama_kubeops.jpg)
+
 ```mermaid
 graph LR
     A[Código Fuente] --> B[GitHub Actions]
@@ -20,6 +22,12 @@ graph LR
     D --> E[Kubernetes Cluster]
     E --> F[Aplicación Desplegada]
 ```
+
+### Vista de la Aplicación en Kubernetes
+![Aplicación Kubernetes](images/app_kube.png)
+
+### Servicios y Networking
+![Servicios Kubernetes](images/app_kube-svc.png)
 
 ## 📦 Componentes
 

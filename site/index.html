@@ -239,6 +239,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🏗️ Arquitectura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vista-de-la-aplicacion-en-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vista de la Aplicación en Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicios-y-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servicios y Networking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -698,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="setup.md" class="md-nav__link">
+      <a href="setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture.md" class="md-nav__link">
+      <a href="architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="components.md" class="md-nav__link">
+      <a href="components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docker.md" class="md-nav__link">
+      <a href="docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="kubernetes.md" class="md-nav__link">
+      <a href="kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -894,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="argocd.md" class="md-nav__link">
+      <a href="argocd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -959,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="github-actions.md" class="md-nav__link">
+      <a href="github-actions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -981,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pipeline.md" class="md-nav__link">
+      <a href="pipeline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1010,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="troubleshooting.md" class="md-nav__link">
+      <a href="troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1065,6 +1089,30 @@
       🏗️ Arquitectura
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Arquitectura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vista-de-la-aplicacion-en-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vista de la Aplicación en Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicios-y-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servicios y Networking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1485,6 +1533,7 @@
 - Despliegue en Kubernetes
 - Gestión de configuración con ArgoCD</p>
 <h2 id="arquitectura">🏗️ Arquitectura<a class="headerlink" href="#arquitectura" title="Permanent link">&para;</a></h2>
+<p><img alt="Diagrama de Arquitectura" src="images/Diagrama_kubeops.jpg" /></p>
 <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1497,6 +1546,10 @@
     D --&gt; E[Kubernetes Cluster]
     E --&gt; F[Aplicación Desplegada]
 </code></pre></div></td></tr></table></div>
+<h3 id="vista-de-la-aplicacion-en-kubernetes">Vista de la Aplicación en Kubernetes<a class="headerlink" href="#vista-de-la-aplicacion-en-kubernetes" title="Permanent link">&para;</a></h3>
+<p><img alt="Aplicación Kubernetes" src="images/app_kube.png" /></p>
+<h3 id="servicios-y-networking">Servicios y Networking<a class="headerlink" href="#servicios-y-networking" title="Permanent link">&para;</a></h3>
+<p><img alt="Servicios Kubernetes" src="images/app_kube-svc.png" /></p>
 <h2 id="componentes">📦 Componentes<a class="headerlink" href="#componentes" title="Permanent link">&para;</a></h2>
 <h3 id="1-aplicacion-web">1. Aplicación Web<a class="headerlink" href="#1-aplicacion-web" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1731,10 +1784,10 @@ kubectl<span class="w"> </span>port-forward<span class="w"> </span>svc/gitops-de
 <h2 id="recursos-adicionales">📚 Recursos Adicionales<a class="headerlink" href="#recursos-adicionales" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="prerequisites/">Guía de Prerequisites</a></li>
-<li><a href="setup.md">Setup Detallado</a></li>
-<li><a href="architecture.md">Arquitectura Completa</a></li>
-<li><a href="argocd.md">Configuración de ArgoCD</a></li>
-<li><a href="troubleshooting.md">Troubleshooting</a></li>
+<li><a href="setup/">Setup Detallado</a></li>
+<li><a href="architecture/">Arquitectura Completa</a></li>
+<li><a href="argocd/">Configuración de ArgoCD</a></li>
+<li><a href="troubleshooting/">Troubleshooting</a></li>
 </ul>
 <h2 id="contribuir">👥 Contribuir<a class="headerlink" href="#contribuir" title="Permanent link">&para;</a></h2>
 <p>Este proyecto es parte del portfolio de DevOps y está abierto a contribuciones:</p>
